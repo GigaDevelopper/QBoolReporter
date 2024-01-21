@@ -7,5 +7,6 @@
    cd build
    cmake ..
 ```
+![](base/erd.png)
 [ERD_](https://dbdiagram.io/d/658c3b0b89dea627999ff7b6)
 
