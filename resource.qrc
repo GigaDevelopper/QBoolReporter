@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/add-data-file-page-paper-svgrepo-com.svg</file>
+        <file>icons/signIn.svg</file>
+        <file>icons/trash-bin-garbage-svgrepo-com.svg</file>
+        <file>icons/key-password-svgrepo-com.svg</file>
+        <file>icons/find.png</file>
+        <file>icons/server.png</file>
+    </qresource>
+</RCC>
