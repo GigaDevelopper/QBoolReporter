@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddDonorForm</class>
+ <widget class="QWidget" name="AddDonorForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>579</width>
+    <height>498</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sign Up Donor</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_6">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLineEdit" name="nameEdit">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #f7f7f7;
+    border: 2px solid #b0b0b0;
+    border-radius: 8px;
+    padding: 8px;
+    selection-background-color: #d9d9d9;
+}
+
+QLineEdit:focus {
+    border: 2px solid #5c9ded;
+    background-color: #ffffff;
+}
+
+QLineEdit::placeholder {
+    color: #808080;
+}
+
+QLineEdit:hover {
+    border: 2px solid #d0d0d0;
+}
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>Input Donor Name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="surNameEdit">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #f7f7f7;
+    border: 2px solid #b0b0b0;
+    border-radius: 8px;
+    padding: 8px;
+    selection-background-color: #d9d9d9;
+}
+
+QLineEdit:focus {
+    border: 2px solid #5c9ded;
+    background-color: #ffffff;
+}
+
+QLineEdit::placeholder {
+    color: #808080;
+}
+
+QLineEdit:hover {
+    border: 2px solid #d0d0d0;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>Input Donor SurName</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="middleNameEdit">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #f7f7f7;
+    border: 2px solid #b0b0b0;
+    border-radius: 8px;
+    padding: 8px;
+    selection-background-color: #d9d9d9;
+}
+
+QLineEdit:focus {
+    border: 2px solid #5c9ded;
+    background-color: #ffffff;
+}
+
+QLineEdit::placeholder {
+    color: #808080;
+}
+
+QLineEdit:hover {
+    border: 2px solid #d0d0d0;
+}
+</string>
+         </property>
+         <property name="placeholderText">
+          <string>Input Donor MiddleName</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="phoneEdit">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: #f7f7f7;
+    border: 2px solid #b0b0b0;
+    border-radius: 8px;
+    padding: 8px;
+    selection-background-color: #d9d9d9;
+}
+
+QLineEdit:focus {
+    border: 2px solid #5c9ded;
+    background-color: #ffffff;
+}
+
+QLineEdit::placeholder {
+    color: #808080;
+}
+
+QLineEdit:hover {
+    border: 2px solid #d0d0d0;
+}
+</string>
+         </property>
+         <property name="inputMask">
+          <string>+9\-999\-9999\-999</string>
+         </property>
+         <property name="placeholderText">
+          <string>Input Donor Phone</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Дата рождение</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDateEdit" name="dateEdit"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>Пол</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QRadioButton" name="maleRadioBtn">
+            <property name="text">
+             <string>М</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="fmlRadioBtn">
+            <property name="text">
+             <string>Ж</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="adressEdit">
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+    background-color: #f7f7f7;
+    border: 2px solid #b0b0b0;
+    border-radius: 8px;
+    padding: 8px;
+    selection-background-color: #d9d9d9;
+}
+
+QLineEdit:focus {
+    border: 2px solid #5c9ded;
+    background-color: #ffffff;
+}
+
+QLineEdit::placeholder {
+    color: #808080;
+}
+
+QLineEdit:hover {
+    border: 2px solid #d0d0d0;
+}
+</string>
+     </property>
+     <property name="placeholderText">
+      <string>Adress Donor</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_5">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="frameShape">
+          <enum>QFrame::Panel</enum>
+         </property>
+         <property name="text">
+          <string>Сведение о группы крови донора</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="styleSheet">
+        <string notr="true">QFrame {
+    background-color: #ffffff;
+    border: 2px solid #b0b0b0;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+QFrame:hover {
+    border: 2px solid #d0d0d0;
+}
+
+QFrame#specialFrame {
+    background-color: #f7f7f7;
+    border: 3px solid #5c9ded;
+}
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QComboBox" name="groupComboBox">
+          <item>
+           <property name="text">
+            <string>I</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>II</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>III</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>IV</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="rezusEdit">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+    background-color: #f7f7f7;
+    border: 2px solid #b0b0b0;
+    border-radius: 8px;
+    padding: 8px;
+    selection-background-color: #d9d9d9;
+}
+
+QLineEdit:focus {
+    border: 2px solid #5c9ded;
+    background-color: #ffffff;
+}
+
+QLineEdit::placeholder {
+    color: #808080;
+}
+
+QLineEdit:hover {
+    border: 2px solid #d0d0d0;
+}
+</string>
+          </property>
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>Input Donor Rezus Factor</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>Документы</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QCheckBox" name="medCarCheck">
+        <property name="text">
+         <string>MED CARD</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="medAnalyseCheck">
+        <property name="text">
+         <string>MED_ANALYSE</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="PassportCheck">
+        <property name="text">
+         <string>PASSPORT</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QPushButton" name="saveBtn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Green background color */
+    border: none; /* No border */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around text */
+    border-radius: 20px; /* Rounded corners */
+}
+
+QPushButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+QPushButton:pressed {
+    background-color: #3e8e41; /* Even darker green when pressed */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Сохранить</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="cancelBtn">
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Green background color */
+    border: none; /* No border */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around text */
+    border-radius: 20px; /* Rounded corners */
+}
+
+QPushButton:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+QPushButton:pressed {
+    background-color: #3e8e41; /* Even darker green when pressed */
+}
+</string>
+       </property>
+       <property name="text">
+        <string>отменить</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>851</width>
+    <height>486</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>770</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Учет </string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QTabWidget {
+    background-color: #f0f0f0; /* Set the background color */
+    border: 1px solid #d0d0d0; /* Set the border color and thickness */
+    border-radius: 6px; /* Add rounded corners */
+}
+
+QTabWidget::tab-bar {
+    alignment: center; /* Center-align the tabs */
+}
+
+QTabBar::tab {
+    background-color: #e0e0e0; /* Set the tab background color */
+    border: 1px solid #c0c0c0; /* Set the tab border color and thickness */
+    border-radius: 4px; /* Add rounded corners to the tabs */
+    min-width: 80px; /* Set minimum tab width */
+    padding: 6px; /* Add padding to the tabs */
+    color: #404040; /* Set the text color of the tabs */
+}
+
+QTabBar::tab:selected {
+    background-color: #ffffff; /* Set the background color of the selected tab */
+    border-bottom-color: #ffffff; /* Set the border color at the bottom of the selected tab */
+}
+
+QTabWidget::pane {
+    border-top: 1px solid #c0c0c0; /* Set the border color and thickness for the content area */
+}
+
+QTabWidget::tab-bar:top {
+    top: 1px; /* Adjust the top position for the tabs */
+}
+
+QTabWidget::tab-bar:bottom {
+    bottom: 1px; /* Adjust the bottom position for the tabs */
+}
+
+QTabWidget::tab-bar:left {
+    left: 1px; /* Adjust the left position for the tabs */
+}
+
+QTabWidget::tab-bar:right {
+    right: 1px; /* Adjust the right position for the tabs */
+}
+
+QTableWidget {
+    alternate-background-color: #f5f5f5; /* Alternate row background color */
+    background-color: #ffffff; /* Default background color */
+    border: 1px solid #dcdcdc; /* Light border color */
+    gridline-color: #dcdcdc; /* Color of the grid lines */
+    selection-background-color: #cce5ff; /* Background color when a cell is selected */
+}
+
+QTableWidget::item {
+    padding: 5px; /* Padding for each cell */
+}
+
+QTableWidget::item:selected {
+    color: #ffffff; /* Text color when a cell is selected */
+}
+
+QHeaderView::section {
+    background-color: #4CAF50; /* Header background color */
+    color: #ffffff; /* Header text color */
+    padding: 5px; /* Padding for header sections */
+}
+
+QTableCornerButton::section {
+    background-color: #4CAF50; /* Top-left corner button background color */
+}
+
+
+
+QWidget {
+    background-color: #f0f0f0; /* Light gray background */
+    border: 1px solid #dcdcdc; /* Light border color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+QWidget:hover {
+    border: 1px solid #a0a0a0; /* Darker border on hover */
+}
+
+
+QCheckBox {
+    spacing: 5px;
+}
+
+QCheckBox::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QCheckBox::indicator::unchecked {
+    border: 2px solid #555;
+    background-color: white;
+}
+
+QCheckBox::indicator::checked {
+    border: 2px solid #2ecc71; /* Green border for checked state */
+    background-color: #2ecc71; /* Green background for checked state */
+}
+
+QCheckBox::indicator::unchecked:hover,
+QCheckBox::indicator::checked:hover {
+    border: 2px solid #3498db; /* Blue border on hover */
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Пациенты</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QLineEdit" name="surNameEdit">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    background-color: #ffffff; /* White background color */
+    border: 2px solid #a0a0a0; /* Light border color */
+    border-radius: 15px; /* Rounded corners */
+    padding: 8px; /* Padding inside the QLineEdit */
+    color: #333333; /* Text color */
+}
+
+QLineEdit:hover {
+    border: 2px solid #007acc; /* Border color on hover */
+}
+
+QLineEdit:focus {
+    border: 2px solid #007acc; /* Border color when QLineEdit is focused */
+}
+
+QLineEdit::placeholder {
+    color: #a0a0a0; /* Placeholder text color */
+}
+</string>
+            </property>
+            <property name="placeholderText">
+             <string>Please input surname</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Minimum</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="nextPageBtn_2">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Green background color */
+    border: none; /* No border */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 12px; /* Rounded corners */
+    outline: none; /* No outline on focus */
+}
+
+QPushButton:hover {
+    background-color: #45a049; /* Dark green background on hover */
+}
+
+QPushButton:pressed {
+    background-color: #3c883c; /* Slightly darker green when pressed */
+}
+
+QPushButton:focus {
+    outline: none; /* No outline on focus */
+}
+
+QPushButton:disabled {
+    background-color: #dcdcdc; /* Light gray background for disabled state */
+    color: #a0a0a0; /* Light gray text color for disabled state */
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Найти</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/icons/find.png</normaloff>:/icons/find.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableWidget">
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::AdjustToContents</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>ID</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>NAME</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>SURNAME</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>MIDDLENAME</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>BIRTH_DATE</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>SEX</string>
+           </property>
+           <property name="font">
+            <font>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="background">
+            <color>
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>ADRESS</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>PHONE</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QPushButton" name="addBtn">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>45</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Green background color */
+    border: none; /* No border */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 25px; /* Rounded corners */
+    outline: none; /* No outline on focus */
+}
+
+QPushButton:hover {
+    background-color: #45a049; /* Dark green background on hover */
+}
+
+QPushButton:pressed {
+    background-color: #3c883c; /* Slightly darker green when pressed */
+}
+
+QPushButton:focus {
+    outline: none; /* No outline on focus */
+}
+
+QPushButton:disabled {
+    background-color: #dcdcdc; /* Light gray background for disabled state */
+    color: #a0a0a0; /* Light gray text color for disabled state */
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Добавить донора</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/icons/add-data-file-page-paper-svgrepo-com.svg</normaloff>:/icons/add-data-file-page-paper-svgrepo-com.svg</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="nextPageBtn">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>45</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Green background color */
+    border: none; /* No border */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 25px; /* Rounded corners */
+    outline: none; /* No outline on focus */
+}
+
+QPushButton:hover {
+    background-color: #45a049; /* Dark green background on hover */
+}
+
+QPushButton:pressed {
+    background-color: #3c883c; /* Slightly darker green when pressed */
+}
+
+QPushButton:focus {
+    outline: none; /* No outline on focus */
+}
+
+QPushButton:disabled {
+    background-color: #dcdcdc; /* Light gray background for disabled state */
+    color: #a0a0a0; /* Light gray text color for disabled state */
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Учет данных</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/icons/server.png</normaloff>:/icons/server.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Учет данных</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_3">
+                <property name="spacing">
+                 <number>15</number>
+                </property>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout_2">
+                  <property name="spacing">
+                   <number>15</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="lblFromHint_2">
+                    <property name="font">
+                     <font>
+                      <pointsize>11</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>From</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QDateEdit" name="fromDateEdit">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
+                    <property name="calendarPopup">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <layout class="QHBoxLayout" name="horizontalLayout">
+                  <property name="spacing">
+                   <number>15</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="lblFromHint">
+                    <property name="font">
+                     <font>
+                      <pointsize>11</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>To</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QDateEdit" name="dateEdit_2">
+                    <property name="font">
+                     <font>
+                      <pointsize>12</pointsize>
+                     </font>
+                    </property>
+                    <property name="calendarPopup">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QPushButton" name="filterBtn">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Filtered</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox">
+              <property name="title">
+               <string>GroupBold</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <item>
+                <widget class="QCheckBox" name="IRdBtn">
+                 <property name="text">
+                  <string>I</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="IIRdBtn">
+                 <property name="text">
+                  <string>II</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="IIIRdBtn">
+                 <property name="text">
+                  <string>III</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="IVRdBtn">
+                 <property name="text">
+                  <string>IV</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QListWidget" name="listWidget"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Документы</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QLineEdit" name="personEditDocument">
+            <property name="minimumSize">
+             <size>
+              <width>250</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLineEdit {
+    background-color: #ffffff; /* White background color */
+    border: 2px solid #a0a0a0; /* Light border color */
+    border-radius: 15px; /* Rounded corners */
+    padding: 8px; /* Padding inside the QLineEdit */
+    color: #333333; /* Text color */
+}
+
+QLineEdit:hover {
+    border: 2px solid #007acc; /* Border color on hover */
+}
+
+QLineEdit:focus {
+    border: 2px solid #007acc; /* Border color when QLineEdit is focused */
+}
+
+QLineEdit::placeholder {
+    color: #a0a0a0; /* Placeholder text color */
+}
+</string>
+            </property>
+            <property name="placeholderText">
+             <string>Please input patient Id</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Minimum</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="findDocBtn">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Green background color */
+    border: none; /* No border */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 12px; /* Rounded corners */
+    outline: none; /* No outline on focus */
+}
+
+QPushButton:hover {
+    background-color: #45a049; /* Dark green background on hover */
+}
+
+QPushButton:pressed {
+    background-color: #3c883c; /* Slightly darker green when pressed */
+}
+
+QPushButton:focus {
+    outline: none; /* No outline on focus */
+}
+
+QPushButton:disabled {
+    background-color: #dcdcdc; /* Light gray background for disabled state */
+    color: #a0a0a0; /* Light gray text color for disabled state */
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Найти</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/icons/find.png</normaloff>:/icons/find.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="docTableWidget">
+          <property name="frameShape">
+           <enum>QFrame::WinPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <property name="lineWidth">
+           <number>2</number>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::AdjustToContents</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>ID</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>TYPE</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>DATE_OF_ISSUE</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>FROM_ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>OWNER_ID</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Группа крови</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QTableWidget" name="boldTableWidget">
+          <property name="frameShape">
+           <enum>QFrame::WinPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <property name="lineWidth">
+           <number>2</number>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::AdjustToContents</enum>
+          </property>
+          <column>
+           <property name="text">
+            <string>ID</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>11</pointsize>
+            </font>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>REZUS_FACTOR</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>B_GROUP</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>OWNER_ID</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Expanding</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>180</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <widget class="QPushButton" name="findBoldBtn">
+            <property name="minimumSize">
+             <size>
+              <width>200</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>250</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>11</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Green background color */
+    border: none; /* No border */
+    color: #ffffff; /* White text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 12px; /* Rounded corners */
+    outline: none; /* No outline on focus */
+}
+
+QPushButton:hover {
+    background-color: #45a049; /* Dark green background on hover */
+}
+
+QPushButton:pressed {
+    background-color: #3c883c; /* Slightly darker green when pressed */
+}
+
+QPushButton:focus {
+    outline: none; /* No outline on focus */
+}
+
+QPushButton:disabled {
+    background-color: #dcdcdc; /* Light gray background for disabled state */
+    color: #a0a0a0; /* Light gray text color for disabled state */
+}
+</string>
+            </property>
+            <property name="text">
+             <string>Найти</string>
+            </property>
+            <property name="icon">
+             <iconset resource="resource.qrc">
+              <normaloff>:/icons/find.png</normaloff>:/icons/find.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>30</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QCheckBox" name="firstCheckBold">
+              <property name="text">
+               <string>I</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="secondCheckBold">
+              <property name="text">
+               <string>II</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="secondCheckBold_2">
+              <property name="text">
+               <string>III</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="secondCheckBold_3">
+              <property name="text">
+               <string>IV</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>851</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuData">
+    <property name="title">
+     <string>Data</string>
+    </property>
+    <addaction name="actionAdd_Data"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout_Us"/>
+    <addaction name="actionAbout_Programm"/>
+   </widget>
+   <addaction name="menuData"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbout_Us">
+   <property name="text">
+    <string>About Us</string>
+   </property>
+  </action>
+  <action name="actionAbout_Programm">
+   <property name="text">
+    <string>About Programm</string>
+   </property>
+  </action>
+  <action name="actionAdd_Data">
+   <property name="text">
+    <string>Add Data</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
