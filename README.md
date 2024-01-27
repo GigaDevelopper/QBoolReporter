@@ -1,11 +1,4 @@
-<!-- <div align="right">
-  Language:
-    🇺🇸
-  <a title="Chinese" href="./README.zh-CN.md">🇨🇳</a>
-</div> -->
-
-<div align="center" style="font-size:20px;">QBooldStation</div>
-
+# QBooldStation
 <p align="center" 
   style="background:blue;font-size:20px;">
 <br>
