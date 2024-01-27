@@ -4,7 +4,7 @@
   <a title="Chinese" href="./README.zh-CN.md">🇨🇳</a>
 </div> -->
 
-<div align="center" style="background:blue;font-size:20px;">QBooldStation</div>
+<div align="center" style="background-color:blue;font-size:20px;">QBooldStation</div>
 
 <p align="center" 
   style="background:blue;font-size:20px;">
