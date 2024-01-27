@@ -7,7 +7,7 @@
 <div align="center">QBooldStation</div>
 
 <p align="center" 
-  style:"background:blue;font-size:20px;">
+  style="background:blue;font-size:20px;">
   «QBooldStation»  
 <br>
 <br>
