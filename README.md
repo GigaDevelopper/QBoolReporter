@@ -6,7 +6,8 @@
 
 <div align="center">QBooldStation</div>
 
-<p align="center">
+<p align="center" 
+  style:"background:blue;font-size:20px;">
   «QBooldStation»  
 <br>
 <br>
@@ -15,8 +16,8 @@
   <a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt=""></a>
 </p>
 
-** Hi guys there is a sample programm for reporting data organasation
-* INSTALL GUIDE
+# Hi guys there is a sample programm for reporting data organasation
+# INSTALL GUIDE
 ```shell
    git clone repo
    mkdir build
