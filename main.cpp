@@ -1,6 +1,7 @@
-#include <QApplication>
-#include "mainwindow.h"
+
+#include "views/mainwindow.h"
 #include "views/signinform.h"
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
