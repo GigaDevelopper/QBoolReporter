@@ -15,14 +15,6 @@
   <a href="http://commitizen.github.io/cz-cli/"><img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg" alt=""></a>
 </p>
 
-## Contributing
-
-Anyone's participation is welcome! Open an [issue](https://github.com/GigaDevelopper/QBoolReporter/issues) or submit PRs.
-
-## License
-
-[MIT](LICENSE) © 2024 Azmiddin
-
 ** Hi guys there is a sample programm for reporting data organasation
 * INSTALL GUIDE
 ```shell
@@ -34,3 +26,12 @@ Anyone's participation is welcome! Open an [issue](https://github.com/GigaDevelo
 ![](base/erd.png)
 [ERD_](https://dbdiagram.io/d/658c3b0b89dea627999ff7b6)
 
+
+
+## Contributing
+
+Anyone's participation is welcome! Open an [issue](https://github.com/GigaDevelopper/QBoolReporter/issues) or submit PRs.
+
+## License
+
+[MIT](LICENSE) © 2024 Azmiddin
