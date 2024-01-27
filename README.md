@@ -4,11 +4,10 @@
   <a title="Chinese" href="./README.zh-CN.md">🇨🇳</a>
 </div> -->
 
-<div align="center">QBooldStation</div>
+<div align="center" style="background:blue;font-size:20px;">QBooldStation</div>
 
 <p align="center" 
   style="background:blue;font-size:20px;">
-  «QBooldStation»  
 <br>
 <br>
   <a href="https://github.com/RichardLitt/standard-readme"><img src="https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square" alt=""></a>
